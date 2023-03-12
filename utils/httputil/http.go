@@ -1,4 +1,4 @@
-//package for common functionality
+// package for common functionality
 package httputil
 
 import (
@@ -9,8 +9,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// Executes an http request based on the provided parameters
-func Execute(method string, url string, bearer string) (resp *http.Response, err error) {
+// Request an http request based on the provided parameters
+func Request(method string, url string, bearer string) (resp *http.Response, err error) {
 
 	// Create a new request using http
 	req, err := http.NewRequest("GET", url, nil)
